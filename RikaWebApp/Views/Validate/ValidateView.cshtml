@@ -1,0 +1,38 @@
+﻿@using RikaWebApp.Models;
+@using RikaWebApp.Models.Auth
+
+@model ValidateModel;
+
+
+<section id="validate">
+    <div class="container register-container">
+        
+        <div class="title-center">
+            <img src="https://storagerika.blob.core.windows.net/files/logo_black.png" alt="onboarding">
+
+        </div>
+
+
+
+        <div class="form">
+            <form id="RegisterForm" asp-action="Validate" asp-controller="Validate" method="post" novalidate>
+
+
+                <div class="input-group">
+                    <label asp-for="Email">Email</label>
+                    <input asp-for="Email">
+                    <span asp-validation-for="Email" class="error-message"></span>
+                </div>
+
+                <div class="input-group">
+                    <label asp-for="Code">Code</label>
+                    <input asp-for="Code">
+                    <span asp-validation-for="Code" class="error-message"></span>
+                </div>
+
+
+                <button type="submit" class="btn-round btn-validate">Validate</button>
+            </form>
+        </div>
+    </div>
+</section>

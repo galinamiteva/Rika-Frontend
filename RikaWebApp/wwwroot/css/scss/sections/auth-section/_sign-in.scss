@@ -1,0 +1,132 @@
+﻿#login {
+    padding-top: 2rem;
+
+    .register-container {
+        padding: 1.5rem;
+    }
+
+
+    .title-center {
+        justify-self: center;
+        padding-bottom: 3rem;
+    }
+
+    .sign-up-title {
+        margin-bottom: 2rem;
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        p {
+            color: $accent-color;
+            margin-top: 0;
+        }
+    }
+
+    .form {
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 1rem;
+
+            .input-and-eye {
+                display: flex;
+
+                input {
+                    width: 100%;
+                }
+
+                .eye {
+                    border-bottom: 1px solid $accent-color;
+                }
+            }
+        }
+        h5{
+            text-align:center;
+        }
+    }
+
+    .error-message {
+        color: rgb(245, 79, 79);
+    }
+
+    .checkbox-and-text {
+        display: flex;
+        gap: 1rem;
+
+        input {
+            align-self: baseline;
+            margin-top: 5px;
+        }
+
+        p {
+            color: $accent-color;
+        }
+    }
+
+    .btn-sign-in {
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $font-stack;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-facebook {
+        text-align: center;
+        background-color: $blue-color;
+        color: $secondary-color;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $font-stack;
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+
+        i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    }
+
+    .btn-google {
+        background-color: $secondary-color;
+        border: 2px solid black;
+        color: $primary-color;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $font-stack;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;        
+        cursor: pointer;
+
+        i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+    }
+}

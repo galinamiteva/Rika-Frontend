@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Ordeer\**" />
+    <Content Remove="Controllers\Ordeer\**" />
+    <EmbeddedResource Remove="Controllers\Ordeer\**" />
+    <None Remove="Controllers\Ordeer\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\Communication\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Controllers\Product\" />
+
+    <Folder Include="Views\Shared\Partials\Communication\" />
+    <Folder Include="Views\Shared\Partials\Auth\" />
+    <Folder Include="Views\Shared\Partials\Order\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.18.2" />
+  </ItemGroup>
+
+</Project>

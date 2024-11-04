@@ -1,0 +1,48 @@
+﻿@using RikaWebApp.Models;
+@using RikaWebApp.Models.Auth
+
+@model SignInModel;
+
+
+<section id="login">
+    <div class="container register-container">
+       
+        <div class="title-center">
+            <img src="https://storagerika.blob.core.windows.net/files/logo_black.png" alt="onboarding">
+
+        </div>
+        <div class="sign-up-title">
+            <h3>Welcome</h3>
+            <p>please login or sign up to continue our app</p>
+        </div>
+
+
+        <div class="form">
+            <form id="RegisterForm" asp-action="SignIn" asp-controller="SignIn" method="post" novalidate>
+
+
+                <div class="input-group">
+                    <label asp-for="Email">Email</label>
+                    <input asp-for="Email">
+                    <span asp-validation-for="Email" class="error-message"></span>
+                </div>
+
+                <div class="input-group">
+                    <label asp-for="Password">Password</label>
+                    <div class="input-and-eye">
+                        <input asp-for="Password" type="password">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye-slash"></i>
+                            <i style="display: none;" class="fa-solid fa-eye"></i>
+                        </div>
+                    </div>
+                    <span asp-validation-for="Password" class="error-message"></span>
+                </div>
+                <button type="submit" class="btn-round btn-sign-in">Login</button>
+                <h5>or</h5>
+                <button type="submit" class="btn-round btn-facebook"><i class="fa-brands fa-facebook"></i> Continue with Facebook</button>
+                <button type="submit" class="btn-round btn-google"><i class="fa-brands fa-google"></i> Continue with Google</button>
+            </form>
+        </div>
+    </div>
+</section>
