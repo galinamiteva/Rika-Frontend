@@ -1,8 +1,12 @@
-﻿@using RikaWebApp.Models;
-@using RikaWebApp.Models.Auth
+﻿@using RikaWebApp.Models.Auth
+@using RikaWebApp.ViewModels
+
 
 @model SignInModel;
 
+@{
+    ViewData["Title"] = "Model.Title";
+}
 
 <section id="login">
     <div class="container register-container">
@@ -19,12 +23,11 @@
 
         <div class="form">
             <form id="RegisterForm" asp-action="SignIn" asp-controller="SignIn" method="post" novalidate>
-
-
+               
                 <div class="input-group">
                     <label asp-for="Email">Email</label>
                     <input asp-for="Email">
-                    <span asp-validation-for="Email" class="error-message"></span>
+                    <span asp-validation-for="Email" ></span>
                 </div>
 
                 <div class="input-group">
@@ -36,7 +39,7 @@
                             <i style="display: none;" class="fa-solid fa-eye"></i>
                         </div>
                     </div>
-                    <span asp-validation-for="Password" class="error-message"></span>
+                    <span asp-validation-for="Password" ></span>
                 </div>
                 <button type="submit" class="btn-round btn-sign-in">Login</button>
                 <h5>or</h5>

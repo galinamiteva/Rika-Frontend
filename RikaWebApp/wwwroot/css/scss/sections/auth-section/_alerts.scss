@@ -1,0 +1,45 @@
+﻿.alert-danger {
+    background: $danger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.alert-success {
+    background: $success;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.alert-danger-dark {
+    background: $danger-dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.alert-success-dark {
+    background: $success-dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+.alert-warning {
+    background: $warning;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+}

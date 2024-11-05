@@ -2,6 +2,7 @@
 using Business.Services.Product;
 using Business.Interfaces.OrderInterfaces;
 using Business.Services.OrderServices;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,6 +32,26 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+
+//om vi vill att hantera role
+
+//using (var scope = app.Services.CreateScope())
+//{
+//    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+//    string[] roles = ["Admin", "superAdmin", "Manager", "User"];
+//    foreach (string role in roles)
+//    {
+//        if (!await roleManager.RoleExistsAsync(role))
+//        {
+//            await roleManager.CreateAsync(new IdentityRole(role));
+//        }
+
+//    }
+
+//}
+
+
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

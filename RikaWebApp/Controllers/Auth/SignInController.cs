@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using RikaWebApp.Models.Auth;
+using RikaWebApp.ViewModels;
 using System.Text;
 
 namespace RikaWebApp.Controllers.Auth;

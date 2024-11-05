@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using RikaWebApp.Models;
 using RikaWebApp.Models.Auth;
+using RikaWebApp.ViewModels;
+using System.Reflection;
 using System.Text;
 
 namespace RikaWebApp.Controllers
@@ -20,7 +22,7 @@ namespace RikaWebApp.Controllers
         [HttpGet]
         public IActionResult SignUpView()
         {
-            return View();
+            return View(new SignUpModel());
         }
 
         [HttpPost]

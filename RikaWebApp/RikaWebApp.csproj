@@ -19,7 +19,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\Communication\" />
-    <Folder Include="ViewModels\" />
     <Folder Include="Controllers\Product\" />
 
     <Folder Include="Views\Shared\Partials\Communication\" />

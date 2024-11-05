@@ -168,6 +168,51 @@ a.btn:hover {
   outline: none;
 }
 
+.alert-danger {
+  background: #F5D7DA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.alert-success {
+  background: #BCF7D2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.alert-danger-dark {
+  background: #c92464;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.alert-success-dark {
+  background: #5bc784;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.alert-warning {
+  background: #FFE8AD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+}
+
 #register {
   padding-top: 2rem;
 }
